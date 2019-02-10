@@ -9,20 +9,12 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" Component={Login} />
-        <Route path="/dashboard" Component={Dashboard} />
-        <Route path="/newstudy" Component={NewStudy} />
+        <Route exact path="/" component={Login} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/newstudy" component={NewStudy} />
       </Switch>
     );
   }
 }
 
 export default App;
-
-{
-  /* <Switch>
-<Route exact path="/" Component={Login} />
-<Route path="/dashboard" Component={Dashboard} />
-<Route path="/newstudy" Component={NewStudy} />
-</Switch> */
-}

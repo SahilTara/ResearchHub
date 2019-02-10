@@ -1,0 +1,8 @@
+.image-text {
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  line-height: 3em;
+  padding: 5px 10px;
+}
