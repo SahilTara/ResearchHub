@@ -10,20 +10,16 @@ import {firebase} from "./Login"
 export default class NewStudy extends Component {
   constructor(props) {
     super(props);
-    if (firebase.auth().currentUser == null) {
-      window.location.pathname = "";
-    }
     this.state = {};
-    this.uid = firebase.auth().currentUser.uid
     this.handleChange = this.handleChange.bind(this);
     this.onNewPost = this.onNewPost.bind(this);
   }
 
   onNewPost(event) {
-    
+    let uid = firebase.auth().currentUser.uid
     
     axios
-      .post("https://research-hub-cs.azurewebsites.net/api/researchPosting/" + this.uid, {
+      .post("https://research-hub-cs.azurewebsites.net/api/researchPosting/" + uid, {
         author: this.state.author,
         organization: this.state.organization,
         projectDescription: this.state.projectDescription,
