@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-import {firebase} from "./Login"
+import { firebase } from "./Login";
 
 export default class NewStudy extends Component {
   constructor(props) {
@@ -16,16 +16,18 @@ export default class NewStudy extends Component {
   }
 
   onNewPost(event) {
-    let uid = firebase.auth().currentUser.uid
-    
+    let uid = firebase.auth().currentUser.uid;
+
     axios
-      .post("https://research-hub-cs.azurewebsites.net/api/researchPosting/" + uid, {
-        author: this.state.author,
-        organization: this.state.organization,
-        projectDescription: this.state.projectDescription,
-        projectName: this.state.projectName
-        
-      })
+      .post(
+        "https://research-hub-cs.azurewebsites.net/api/researchPosting/" + uid,
+        {
+          author: this.state.author,
+          organization: this.state.organization,
+          projectDescription: this.state.projectDescription,
+          projectName: this.state.projectName
+        }
+      )
       .then(function(response) {
         console.log(response);
       })
