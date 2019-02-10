@@ -13,5 +13,7 @@ target 'ResearchHub' do
   pod 'GoogleSignIn'
   pod 'Eureka'
   pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Alamofire-Synchronous', '~> 4.0'
 
 end

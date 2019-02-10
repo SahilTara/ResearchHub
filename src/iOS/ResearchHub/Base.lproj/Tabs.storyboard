@@ -13,18 +13,217 @@
         <!--New-->
         <scene sceneID="rfb-Vu-g9b">
             <objects>
-                <viewController id="Fu5-dD-5vn" sceneMemberID="viewController">
+                <viewController id="Fu5-dD-5vn" customClass="ResearchTableViewController" customModule="ResearchHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eXX-BD-Trf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cpv-cc-CG4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResearchTableViewCell" rowHeight="320" id="1zH-rQ-idN" customClass="ResearchTableViewCell" customModule="ResearchHub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1zH-rQ-idN" id="kPS-rs-8sd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Vv-93-ESy">
+                                                    <rect key="frame" x="12" y="-24" width="129" height="207"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="129" id="U6I-Dv-HFz"/>
+                                                        <constraint firstAttribute="height" constant="207" id="Wbu-pn-m4A"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoP-Q8-kYK">
+                                                    <rect key="frame" x="151" y="16" width="209" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="2l9-KI-Caw"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Study Name">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <font key="NSOriginalFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-lv-aXO">
+                                                    <rect key="frame" x="151" y="54" width="209" height="128"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Description:">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="14" name=".AppleSystemUIFontEmphasized"/>
+                                                                <font key="NSOriginalFont" size="14" name=".AppleSystemUIFontEmphasized"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment>
+                                                            <string key="content"> This is a description of the project that includes the data requested by the author and the organization and how the data is going to be used. Also lists the rewards this user will get for the proof of concept</string>
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-hP-CSP">
+                                                    <rect key="frame" x="15" y="196" width="128" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="FrQ-cp-RAU"/>
+                                                        <constraint firstAttribute="height" constant="30" id="eMK-Hu-eDY"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Author">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=":">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <font key="NSOriginalFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVt-W1-Bzs">
+                                                    <rect key="frame" x="15" y="234" width="128" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="0JZ-UA-FwP"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Organization">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=":">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <font key="NSOriginalFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5et-61-vPu">
+                                                    <rect key="frame" x="151" y="196" width="209" height="30"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="UBC Professor">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmo-8F-3iI">
+                                                    <rect key="frame" x="151" y="234" width="209" height="30"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="UBC Research">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30Z-VY-gza">
+                                                    <rect key="frame" x="121.5" y="279" width="132" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="132" id="MLd-bF-8dC"/>
+                                                        <constraint firstAttribute="height" constant="30" id="hBn-uR-jix"/>
+                                                    </constraints>
+                                                    <state key="normal">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="Sign Up">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFontEmphasized"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="signUpForResearch:" destination="1zH-rQ-idN" eventType="touchUpInside" id="oAc-aH-nxx"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HVt-W1-Bzs" firstAttribute="baseline" secondItem="Vmo-8F-3iI" secondAttribute="baseline" id="39o-ub-Fte"/>
+                                                <constraint firstItem="9Vv-93-ESy" firstAttribute="leading" secondItem="kPS-rs-8sd" secondAttribute="leadingMargin" constant="-3" id="49a-zt-c6j"/>
+                                                <constraint firstItem="ldk-hP-CSP" firstAttribute="baseline" secondItem="5et-61-vPu" secondAttribute="baseline" id="6TP-6Z-Z46"/>
+                                                <constraint firstItem="HVt-W1-Bzs" firstAttribute="firstBaseline" secondItem="Vmo-8F-3iI" secondAttribute="firstBaseline" id="7Ne-Np-QIt"/>
+                                                <constraint firstItem="ldk-hP-CSP" firstAttribute="firstBaseline" secondItem="5et-61-vPu" secondAttribute="firstBaseline" id="9dF-4W-fWy"/>
+                                                <constraint firstItem="9Vv-93-ESy" firstAttribute="top" secondItem="kPS-rs-8sd" secondAttribute="top" constant="10" id="C53-eG-P8A"/>
+                                                <constraint firstItem="30Z-VY-gza" firstAttribute="centerX" secondItem="kPS-rs-8sd" secondAttribute="centerX" id="Dhh-yw-oBP"/>
+                                                <constraint firstItem="30Z-VY-gza" firstAttribute="bottom" secondItem="kPS-rs-8sd" secondAttribute="bottomMargin" id="GEh-W2-rvH"/>
+                                                <constraint firstItem="5et-61-vPu" firstAttribute="trailing" secondItem="Vmo-8F-3iI" secondAttribute="trailing" id="IC3-BP-DEn"/>
+                                                <constraint firstItem="eVc-lv-aXO" firstAttribute="trailing" secondItem="5et-61-vPu" secondAttribute="trailing" id="IMk-7L-afP"/>
+                                                <constraint firstItem="HoP-Q8-kYK" firstAttribute="leading" secondItem="eVc-lv-aXO" secondAttribute="leading" id="KvF-AY-Sro"/>
+                                                <constraint firstItem="9Vv-93-ESy" firstAttribute="top" secondItem="kPS-rs-8sd" secondAttribute="topMargin" constant="-35" id="MFB-BV-Zvh"/>
+                                                <constraint firstItem="5et-61-vPu" firstAttribute="leading" secondItem="ldk-hP-CSP" secondAttribute="trailing" constant="8" symbolic="YES" id="MZ3-j2-94B"/>
+                                                <constraint firstItem="9Vv-93-ESy" firstAttribute="leading" secondItem="kPS-rs-8sd" secondAttribute="leading" constant="10" id="NZJ-cE-G1F"/>
+                                                <constraint firstItem="HoP-Q8-kYK" firstAttribute="leading" secondItem="9Vv-93-ESy" secondAttribute="trailing" constant="9" id="V00-DH-QQF"/>
+                                                <constraint firstItem="5et-61-vPu" firstAttribute="top" secondItem="eVc-lv-aXO" secondAttribute="bottom" constant="14" id="VFH-3F-dPj"/>
+                                                <constraint firstItem="ldk-hP-CSP" firstAttribute="leading" secondItem="kPS-rs-8sd" secondAttribute="leadingMargin" constant="-1" id="VzM-bZ-IW1"/>
+                                                <constraint firstItem="Vmo-8F-3iI" firstAttribute="leading" secondItem="HVt-W1-Bzs" secondAttribute="trailing" constant="8" symbolic="YES" id="Wk2-wW-Tam"/>
+                                                <constraint firstItem="HoP-Q8-kYK" firstAttribute="trailing" secondItem="eVc-lv-aXO" secondAttribute="trailing" id="ZM4-21-Cbx"/>
+                                                <constraint firstItem="eVc-lv-aXO" firstAttribute="top" secondItem="HoP-Q8-kYK" secondAttribute="bottom" constant="8" symbolic="YES" id="c0y-GV-t2H"/>
+                                                <constraint firstItem="5et-61-vPu" firstAttribute="leading" secondItem="Vmo-8F-3iI" secondAttribute="leading" id="cyR-bj-owc"/>
+                                                <constraint firstItem="30Z-VY-gza" firstAttribute="top" secondItem="HVt-W1-Bzs" secondAttribute="bottom" constant="15" id="hw3-2G-5Z4"/>
+                                                <constraint firstItem="eVc-lv-aXO" firstAttribute="leading" secondItem="5et-61-vPu" secondAttribute="leading" id="iHv-z1-ZYM"/>
+                                                <constraint firstItem="HVt-W1-Bzs" firstAttribute="top" secondItem="ldk-hP-CSP" secondAttribute="bottom" constant="8" symbolic="YES" id="ijd-YB-mG2"/>
+                                                <constraint firstItem="ldk-hP-CSP" firstAttribute="top" secondItem="9Vv-93-ESy" secondAttribute="bottom" constant="13" id="oUk-0d-Jqq"/>
+                                                <constraint firstItem="ldk-hP-CSP" firstAttribute="leading" secondItem="HVt-W1-Bzs" secondAttribute="leading" id="q0j-yM-aZk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HoP-Q8-kYK" secondAttribute="trailing" constant="-1" id="u6c-Kx-6EG"/>
+                                                <constraint firstItem="HoP-Q8-kYK" firstAttribute="top" secondItem="kPS-rs-8sd" secondAttribute="topMargin" constant="-15" id="vNG-LB-iir"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="researchAuthor" destination="5et-61-vPu" id="DD7-yA-SsI"/>
+                                            <outlet property="researchDescription" destination="eVc-lv-aXO" id="x9q-DI-ZX6"/>
+                                            <outlet property="researchImage" destination="9Vv-93-ESy" id="5FT-5g-6ma"/>
+                                            <outlet property="researchName" destination="HoP-Q8-kYK" id="bQX-41-Bmn"/>
+                                            <outlet property="researchOrganization" destination="Vmo-8F-3iI" id="8WI-gL-gcY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eNe-zK-AaZ" firstAttribute="trailing" secondItem="Cpv-cc-CG4" secondAttribute="trailing" id="HwQ-pd-axX"/>
+                            <constraint firstItem="Cpv-cc-CG4" firstAttribute="leading" secondItem="eNe-zK-AaZ" secondAttribute="leading" id="Jmj-rq-36O"/>
+                            <constraint firstItem="Cpv-cc-CG4" firstAttribute="top" secondItem="eNe-zK-AaZ" secondAttribute="top" id="lFC-lY-9UO"/>
+                            <constraint firstItem="eNe-zK-AaZ" firstAttribute="bottom" secondItem="Cpv-cc-CG4" secondAttribute="bottom" id="rh8-AL-ciM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eNe-zK-AaZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="New" id="8Bl-MJ-5qn"/>
+                    <connections>
+                        <outlet property="tableview" destination="Cpv-cc-CG4" id="ecZ-fU-r4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uM8-T9-aA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="-92.203898050974516"/>
+            <point key="canvasLocation" x="1637.5999999999999" y="-102.09895052473765"/>
         </scene>
         <!--Shared-->
         <scene sceneID="PXU-Td-z9b">
@@ -70,6 +269,7 @@
                 <tabBarController storyboardIdentifier="TabsStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="JW4-WG-853" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wn2-om-brw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.8.1)
+  - Alamofire-Synchronous (4.0.0):
+    - Alamofire (~> 4.0)
   - Eureka (4.3.1)
   - Firebase/Auth (5.16.0):
     - Firebase/CoreOnly
@@ -72,17 +74,21 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Alamofire-Synchronous (~> 4.0)
   - Eureka
   - Firebase/Auth
   - Firebase/Core
   - GoogleSignIn
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Alamofire-Synchronous
     - Eureka
     - Firebase
     - FirebaseAnalytics
@@ -96,9 +102,11 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
   Eureka: 28ea296f06710f6745266b71f17862048941a32d
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
@@ -112,7 +120,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 9bc466459900600b33d3fb24c8955e3da9d50ce1
+PODFILE CHECKSUM: 963027888583efa5e8b9f0df02b8162f04d70d72
 
 COCOAPODS: 1.6.0
