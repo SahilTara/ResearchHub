@@ -1,0 +1,22 @@
+.image-text {
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  line-height: 3em;
+  padding: 5px 10px;
+}
+
+.control-space {
+  height: 100px;
+}
+
+.Nav.Link {
+  color: black;
+}
+
+.mycontent-left {
+  height: 700px;
+  margin-right: 10px;
+  border-right: rgb(173, 173, 173) 1px solid;
+}
