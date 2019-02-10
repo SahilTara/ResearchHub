@@ -5,23 +5,30 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import {firebase} from "./Login"
 
 export default class NewStudy extends Component {
   constructor(props) {
     super(props);
+    if (firebase.auth().currentUser == null) {
+      window.location.pathname = "";
+    }
     this.state = {};
-
+    this.uid = firebase.auth().currentUser.uid
     this.handleChange = this.handleChange.bind(this);
     this.onNewPost = this.onNewPost.bind(this);
   }
 
   onNewPost(event) {
+    
+    
     axios
-      .post("https://research-hub-cs.azurewebsites.net/api/researchPosting/a", {
-        author: "this.state.author",
-        organization: "this.state.organization",
-        projectDescription: "this.state.projectDescription",
-        projectName: "this.state.projectName"
+      .post("https://research-hub-cs.azurewebsites.net/api/researchPosting/" + this.uid, {
+        author: this.state.author,
+        organization: this.state.organization,
+        projectDescription: this.state.projectDescription,
+        projectName: this.state.projectName
+        
       })
       .then(function(response) {
         console.log(response);
