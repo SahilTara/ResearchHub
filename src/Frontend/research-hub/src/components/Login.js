@@ -33,6 +33,7 @@ const uiConfig = {
   ]
 };
 
+export {firebase}
 export default class Login extends Component {
   componentDidMount() {
     document.body.className = "body-background"; // Or set the class
