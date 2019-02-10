@@ -69,6 +69,7 @@
                     <navigationItem key="navigationItem" title="Sign In" id="PFq-nz-fnB"/>
                     <connections>
                         <segue destination="NFP-cq-54P" kind="show" identifier="ProfileSegue" id="D7y-2g-goA"/>
+                        <segue destination="qv3-H4-Qg8" kind="show" identifier="TabsSignInSegue" id="7aM-Lc-TZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,10 +93,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="qv3-H4-Qg8" kind="show" identifier="TabsProfileSegue" id="4Zp-8f-nz9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvv-nL-c9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2956" y="133.5832083958021"/>
+        </scene>
+        <!--TabsStoryboard-->
+        <scene sceneID="zG8-o9-Zw9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TabsStoryboard" storyboardName="Tabs" referencedIdentifier="TabsStoryboard" id="qv3-H4-Qg8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eW7-BG-SUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="636"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fFw-FF-57T">
@@ -116,4 +128,7 @@
             <point key="canvasLocation" x="2016.8" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7aM-Lc-TZh"/>
+    </inferredMetricsTieBreakers>
 </document>

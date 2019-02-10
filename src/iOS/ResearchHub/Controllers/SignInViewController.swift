@@ -51,6 +51,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
                 var statusCode = response.response?.statusCode
                 if statusCode == 400 {
                     self.performSegue(withIdentifier: "ProfileSegue", sender: nil)
+                } else {
+                    self.performSegue(withIdentifier: "TabsSignInSegue", sender: self)
                 }
             }
         }

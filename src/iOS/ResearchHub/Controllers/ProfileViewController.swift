@@ -1,8 +1,8 @@
 //
-//  SignUpViewController.swift
+//  ProfileViewController.swift
 //  ResearchHub
 //
-//  Created by Danish Dua on 2019-02-09.
+//  Created by Danish Dua on 2019-02-10.
 //  Copyright © 2019 Danish Dua. All rights reserved.
 //
 
@@ -11,12 +11,11 @@ import Eureka
 import Alamofire
 import FirebaseAuth
 
-class SignUpViewController: FormViewController {
+class ProfileViewController: FormViewController {
     
     let CSAPI_PROF = "https://research-hub-cs.azurewebsites.net/api/profile/"
 
-    
-    @IBAction func SubmitClicked(_ sender: UIBarButtonItem) {
+    @IBAction func Update(_ sender: UIBarButtonItem) {
         if let nameRow = self.form.rowBy(tag: FormItems.name) as? RowOf<String>,
             let birthDateRow = self.form.rowBy(tag: FormItems.dateOfBirth) as? RowOf<Date>,
             let demographicRow = self.form.rowBy(tag: FormItems.demograhic) as? RowOf<String>,
@@ -61,13 +60,15 @@ class SignUpViewController: FormViewController {
                         "location": location
                         ] as [String : Any]
                     
-                    Alamofire.request(profileCall, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).validate()
+                    Alamofire.request(profileCall, method: .patch, parameters: parameters, encoding: JSONEncoding.default, headers: nil).validate()
                         .responseJSON { response in
                             var statusCode = response.response?.statusCode
-                            if statusCode != 200 {
-                                //
-                            } else {
-                                self.performSegue(withIdentifier: "TabsProfileSegue", sender: self)
+                            if statusCode == 200 {
+                                let alert = UIAlertView()
+                                alert.title = "Success!"
+                                alert.message = "Successfully updated your profile!"
+                                alert.addButton(withTitle: "Done")
+                                alert.show()
                             }
                     }
                 }
@@ -75,7 +76,6 @@ class SignUpViewController: FormViewController {
                 showAlert()
                 return
             }
-            
         } else {
             showAlert()
         }
@@ -125,6 +125,57 @@ class SignUpViewController: FormViewController {
             <<< TextRow(FormItems.location) { row in
                 row.title = "Location"
                 row.placeholder = "Vancouver, BC"
-                }
+        }
+        
+        if let user = Auth.auth().currentUser {
+            let uid = user.uid
+            guard let profileCall = URL(string: CSAPI_PROF + uid) else {
+                return
+            }
+            updateData(uri: profileCall)
+        }
     }
+    
+    func updateData(uri: URL) {
+        Alamofire.request(uri).validate()
+            .responseJSON { response in
+                if response.result.value is NSNull {
+                    return
+                }
+                let JSON = response.result.value as? NSDictionary
+                let name = JSON?["name"] as! String
+                
+                let date = JSON?["dateOfBirth"] as! String
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+                dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+                let dateOfBirth = dateFormatter.date(from:date)
+                
+                let demographic = JSON?["demographic"] as! String
+                let height = JSON?["height"] as! Int
+                let weight = JSON?["weight"] as! Int
+                let location = JSON?["location"] as! String
+                
+                if let nameRow = self.form.rowBy(tag: FormItems.name) as? RowOf<String>,
+                    let birthDateRow = self.form.rowBy(tag: FormItems.dateOfBirth) as? RowOf<Date>,
+                    let demographicRow = self.form.rowBy(tag: FormItems.demograhic) as? RowOf<String>,
+                    let heightRow = self.form.rowBy(tag: FormItems.height) as? RowOf<Int>,
+                    let weightRow = self.form.rowBy(tag: FormItems.weight) as? RowOf<Int>,
+                    let locationRow = self.form.rowBy(tag: FormItems.location) as? RowOf<String> {
+                    nameRow.value = name
+                    nameRow.reload()
+                    birthDateRow.value = dateOfBirth
+                    birthDateRow.reload()
+                    demographicRow.value = demographic
+                    demographicRow.reload()
+                    heightRow.value = height
+                    heightRow.reload()
+                    weightRow.value = weight
+                    weightRow.reload()
+                    locationRow.value = location
+                    locationRow.reload()
+                }
+        }
+    }
+
 }
