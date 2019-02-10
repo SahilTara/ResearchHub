@@ -7,76 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7CAA8AB7220FA37B0028809C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA8AB6220FA37B0028809C /* AppDelegate.swift */; };
-		7CAA8AB9220FA37B0028809C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA8AB8220FA37B0028809C /* ViewController.swift */; };
-		7CAA8ABC220FA37B0028809C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA8ABA220FA37B0028809C /* Main.storyboard */; };
-		7CAA8ABF220FA37B0028809C /* ResearchHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA8ABD220FA37B0028809C /* ResearchHub.xcdatamodeld */; };
-		7CAA8AC1220FA37C0028809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA8AC0220FA37C0028809C /* Assets.xcassets */; };
-		7CAA8AC4220FA37C0028809C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAA8AC2220FA37C0028809C /* LaunchScreen.storyboard */; };
+		72C0E04721AF05AF2A441A27 /* Pods_ResearchHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E63C02114E41B43E0ECA5C1 /* Pods_ResearchHub.framework */; };
+		7C0E70CF220FEA2900B102C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C0E70CE220FEA2900B102C4 /* GoogleService-Info.plist */; };
+		7C60CEBD220FDBB9000067B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CEBC220FDBB9000067B4 /* AppDelegate.swift */; };
+		7C60CEBF220FDBB9000067B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CEBE220FDBB9000067B4 /* ViewController.swift */; };
+		7C60CEC2220FDBB9000067B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C60CEC0220FDBB9000067B4 /* Main.storyboard */; };
+		7C60CEC5220FDBB9000067B4 /* ResearchHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CEC3220FDBB9000067B4 /* ResearchHub.xcdatamodeld */; };
+		7C60CEC7220FDBBA000067B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C60CEC6220FDBBA000067B4 /* Assets.xcassets */; };
+		7C60CECA220FDBBA000067B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C60CEC8220FDBBA000067B4 /* LaunchScreen.storyboard */; };
+		7C60CED4220FDE51000067B4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CED3220FDE51000067B4 /* SignInViewController.swift */; };
+		7C60CED6220FDE6B000067B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CED5220FDE6B000067B4 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7CAA8AB3220FA37B0028809C /* ResearchHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResearchHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CAA8AB6220FA37B0028809C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CAA8AB8220FA37B0028809C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CAA8ABB220FA37B0028809C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7CAA8ABE220FA37B0028809C /* ResearchHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResearchHub.xcdatamodel; sourceTree = "<group>"; };
-		7CAA8AC0220FA37C0028809C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7CAA8AC3220FA37C0028809C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7CAA8AC5220FA37C0028809C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E63C02114E41B43E0ECA5C1 /* Pods_ResearchHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResearchHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0E70CC220FE68E00B102C4 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		7C0E70CE220FEA2900B102C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C60CEB9220FDBB9000067B4 /* ResearchHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResearchHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C60CEBC220FDBB9000067B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C60CEBE220FDBB9000067B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C60CEC1220FDBB9000067B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C60CEC4220FDBB9000067B4 /* ResearchHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResearchHub.xcdatamodel; sourceTree = "<group>"; };
+		7C60CEC6220FDBBA000067B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C60CEC9220FDBBA000067B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C60CECB220FDBBA000067B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C60CED3220FDE51000067B4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7C60CED5220FDE6B000067B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D104EE7763BB9886E3FFA194 /* Pods-ResearchHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResearchHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResearchHub/Pods-ResearchHub.debug.xcconfig"; sourceTree = "<group>"; };
+		FECD7ECAC12C8FEE9F56EB7B /* Pods-ResearchHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResearchHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResearchHub/Pods-ResearchHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7CAA8AB0220FA37B0028809C /* Frameworks */ = {
+		7C60CEB6220FDBB9000067B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C0E04721AF05AF2A441A27 /* Pods_ResearchHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7CAA8AAA220FA37B0028809C = {
+		7C0E70CB220FE68D00B102C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CAA8AB5220FA37B0028809C /* ResearchHub */,
-				7CAA8AB4220FA37B0028809C /* Products */,
+				7C0E70CC220FE68E00B102C4 /* Eureka.framework */,
+				2E63C02114E41B43E0ECA5C1 /* Pods_ResearchHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C60CEB0220FDBB9000067B4 = {
+			isa = PBXGroup;
+			children = (
+				7C60CEBB220FDBB9000067B4 /* ResearchHub */,
+				7C60CEBA220FDBB9000067B4 /* Products */,
+				7C0E70CB220FE68D00B102C4 /* Frameworks */,
+				7FE18664B1DBD99553BE3C18 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		7CAA8AB4220FA37B0028809C /* Products */ = {
+		7C60CEBA220FDBB9000067B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CAA8AB3220FA37B0028809C /* ResearchHub.app */,
+				7C60CEB9220FDBB9000067B4 /* ResearchHub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7CAA8AB5220FA37B0028809C /* ResearchHub */ = {
+		7C60CEBB220FDBB9000067B4 /* ResearchHub */ = {
 			isa = PBXGroup;
 			children = (
-				7CAA8AB6220FA37B0028809C /* AppDelegate.swift */,
-				7CAA8AB8220FA37B0028809C /* ViewController.swift */,
-				7CAA8ABA220FA37B0028809C /* Main.storyboard */,
-				7CAA8AC0220FA37C0028809C /* Assets.xcassets */,
-				7CAA8AC2220FA37C0028809C /* LaunchScreen.storyboard */,
-				7CAA8AC5220FA37C0028809C /* Info.plist */,
-				7CAA8ABD220FA37B0028809C /* ResearchHub.xcdatamodeld */,
+				7C60CED2220FDE3A000067B4 /* Controllers */,
+				7C60CEBC220FDBB9000067B4 /* AppDelegate.swift */,
+				7C60CEBE220FDBB9000067B4 /* ViewController.swift */,
+				7C60CEC0220FDBB9000067B4 /* Main.storyboard */,
+				7C60CEC6220FDBBA000067B4 /* Assets.xcassets */,
+				7C60CEC8220FDBBA000067B4 /* LaunchScreen.storyboard */,
+				7C60CECB220FDBBA000067B4 /* Info.plist */,
+				7C0E70CE220FEA2900B102C4 /* GoogleService-Info.plist */,
+				7C60CEC3220FDBB9000067B4 /* ResearchHub.xcdatamodeld */,
 			);
 			path = ResearchHub;
+			sourceTree = "<group>";
+		};
+		7C60CED2220FDE3A000067B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C60CED3220FDE51000067B4 /* SignInViewController.swift */,
+				7C60CED5220FDE6B000067B4 /* SignUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7FE18664B1DBD99553BE3C18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D104EE7763BB9886E3FFA194 /* Pods-ResearchHub.debug.xcconfig */,
+				FECD7ECAC12C8FEE9F56EB7B /* Pods-ResearchHub.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7CAA8AB2220FA37B0028809C /* ResearchHub */ = {
+		7C60CEB8220FDBB9000067B4 /* ResearchHub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CAA8AC8220FA37C0028809C /* Build configuration list for PBXNativeTarget "ResearchHub" */;
+			buildConfigurationList = 7C60CECE220FDBBA000067B4 /* Build configuration list for PBXNativeTarget "ResearchHub" */;
 			buildPhases = (
-				7CAA8AAF220FA37B0028809C /* Sources */,
-				7CAA8AB0220FA37B0028809C /* Frameworks */,
-				7CAA8AB1220FA37B0028809C /* Resources */,
+				942EE0B344BC73FD00191181 /* [CP] Check Pods Manifest.lock */,
+				7C60CEB5220FDBB9000067B4 /* Sources */,
+				7C60CEB6220FDBB9000067B4 /* Frameworks */,
+				7C60CEB7220FDBB9000067B4 /* Resources */,
+				D61FE5EBA42BAE93CB2E6166 /* [CP] Embed Pods Frameworks */,
+				733CFB6BDC9C82539F724E70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +130,25 @@
 			);
 			name = ResearchHub;
 			productName = ResearchHub;
-			productReference = 7CAA8AB3220FA37B0028809C /* ResearchHub.app */;
+			productReference = 7C60CEB9220FDBB9000067B4 /* ResearchHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7CAA8AAB220FA37B0028809C /* Project object */ = {
+		7C60CEB1220FDBB9000067B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Danish Dua";
 				TargetAttributes = {
-					7CAA8AB2220FA37B0028809C = {
+					7C60CEB8220FDBB9000067B4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 7CAA8AAE220FA37B0028809C /* Build configuration list for PBXProject "ResearchHub" */;
+			buildConfigurationList = 7C60CEB4220FDBB9000067B4 /* Build configuration list for PBXProject "ResearchHub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +156,137 @@
 				en,
 				Base,
 			);
-			mainGroup = 7CAA8AAA220FA37B0028809C;
-			productRefGroup = 7CAA8AB4220FA37B0028809C /* Products */;
+			mainGroup = 7C60CEB0220FDBB9000067B4;
+			productRefGroup = 7C60CEBA220FDBB9000067B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7CAA8AB2220FA37B0028809C /* ResearchHub */,
+				7C60CEB8220FDBB9000067B4 /* ResearchHub */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7CAA8AB1220FA37B0028809C /* Resources */ = {
+		7C60CEB7220FDBB9000067B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CAA8AC4220FA37C0028809C /* LaunchScreen.storyboard in Resources */,
-				7CAA8AC1220FA37C0028809C /* Assets.xcassets in Resources */,
-				7CAA8ABC220FA37B0028809C /* Main.storyboard in Resources */,
+				7C60CECA220FDBBA000067B4 /* LaunchScreen.storyboard in Resources */,
+				7C0E70CF220FEA2900B102C4 /* GoogleService-Info.plist in Resources */,
+				7C60CEC7220FDBBA000067B4 /* Assets.xcassets in Resources */,
+				7C60CEC2220FDBB9000067B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		733CFB6BDC9C82539F724E70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResearchHub/Pods-ResearchHub-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResearchHub/Pods-ResearchHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		942EE0B344BC73FD00191181 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ResearchHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61FE5EBA42BAE93CB2E6166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResearchHub/Pods-ResearchHub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResearchHub/Pods-ResearchHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7CAA8AAF220FA37B0028809C /* Sources */ = {
+		7C60CEB5220FDBB9000067B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CAA8AB9220FA37B0028809C /* ViewController.swift in Sources */,
-				7CAA8ABF220FA37B0028809C /* ResearchHub.xcdatamodeld in Sources */,
-				7CAA8AB7220FA37B0028809C /* AppDelegate.swift in Sources */,
+				7C60CED4220FDE51000067B4 /* SignInViewController.swift in Sources */,
+				7C60CEBF220FDBB9000067B4 /* ViewController.swift in Sources */,
+				7C60CEC5220FDBB9000067B4 /* ResearchHub.xcdatamodeld in Sources */,
+				7C60CEBD220FDBB9000067B4 /* AppDelegate.swift in Sources */,
+				7C60CED6220FDE6B000067B4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7CAA8ABA220FA37B0028809C /* Main.storyboard */ = {
+		7C60CEC0220FDBB9000067B4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7CAA8ABB220FA37B0028809C /* Base */,
+				7C60CEC1220FDBB9000067B4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7CAA8AC2220FA37C0028809C /* LaunchScreen.storyboard */ = {
+		7C60CEC8220FDBBA000067B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7CAA8AC3220FA37C0028809C /* Base */,
+				7C60CEC9220FDBBA000067B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +294,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7CAA8AC6220FA37C0028809C /* Debug */ = {
+		7C60CECC220FDBBA000067B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +355,7 @@
 			};
 			name = Debug;
 		};
-		7CAA8AC7220FA37C0028809C /* Release */ = {
+		7C60CECD220FDBBA000067B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,12 +410,17 @@
 			};
 			name = Release;
 		};
-		7CAA8AC9220FA37C0028809C /* Debug */ = {
+		7C60CECF220FDBBA000067B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D104EE7763BB9886E3FFA194 /* Pods-ResearchHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S85AC8DQ5L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ResearchHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,12 +433,17 @@
 			};
 			name = Debug;
 		};
-		7CAA8ACA220FA37C0028809C /* Release */ = {
+		7C60CED0220FDBBA000067B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECD7ECAC12C8FEE9F56EB7B /* Pods-ResearchHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S85AC8DQ5L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ResearchHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,20 +459,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7CAA8AAE220FA37B0028809C /* Build configuration list for PBXProject "ResearchHub" */ = {
+		7C60CEB4220FDBB9000067B4 /* Build configuration list for PBXProject "ResearchHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CAA8AC6220FA37C0028809C /* Debug */,
-				7CAA8AC7220FA37C0028809C /* Release */,
+				7C60CECC220FDBBA000067B4 /* Debug */,
+				7C60CECD220FDBBA000067B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CAA8AC8220FA37C0028809C /* Build configuration list for PBXNativeTarget "ResearchHub" */ = {
+		7C60CECE220FDBBA000067B4 /* Build configuration list for PBXNativeTarget "ResearchHub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CAA8AC9220FA37C0028809C /* Debug */,
-				7CAA8ACA220FA37C0028809C /* Release */,
+				7C60CECF220FDBBA000067B4 /* Debug */,
+				7C60CED0220FDBBA000067B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -342,17 +480,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7CAA8ABD220FA37B0028809C /* ResearchHub.xcdatamodeld */ = {
+		7C60CEC3220FDBB9000067B4 /* ResearchHub.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7CAA8ABE220FA37B0028809C /* ResearchHub.xcdatamodel */,
+				7C60CEC4220FDBB9000067B4 /* ResearchHub.xcdatamodel */,
 			);
-			currentVersion = 7CAA8ABE220FA37B0028809C /* ResearchHub.xcdatamodel */;
+			currentVersion = 7C60CEC4220FDBB9000067B4 /* ResearchHub.xcdatamodel */;
 			path = ResearchHub.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 7CAA8AAB220FA37B0028809C /* Project object */;
+	rootObject = 7C60CEB1220FDBB9000067B4 /* Project object */;
 }
