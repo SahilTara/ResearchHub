@@ -32,7 +32,7 @@ namespace ResearchHub.Api.CSharp
             var data = JsonConvert.DeserializeObject(requestBody);
             
 
-            if (firebaseId == null) {
+            if (string.IsNullOrEmpty(firebaseId)) {
                 return new BadRequestObjectResult(new {message = "Please specify a firebase id"} );
             }
 
