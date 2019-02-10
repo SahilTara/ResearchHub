@@ -33,7 +33,7 @@ const uiConfig = {
   ]
 };
 
-export {firebase}
+export { firebase };
 export default class Login extends Component {
   componentDidMount() {
     document.body.className = "body-background"; // Or set the class
@@ -57,7 +57,7 @@ export default class Login extends Component {
               <Image className="my-3" src={PortalLogoBlue} />
               <Card.Body>
                 <Card.Title className="mb-3">Research Hub</Card.Title>
-                <Card.Subtitle className="mb-5">
+                <Card.Subtitle className="mb-5 font-control">
                   Visualize your research results in one place.
                 </Card.Subtitle>
                 <StyledFirebaseAuth
