@@ -1,0 +1,14 @@
+.body-background {
+  background-image: url("../images/PortalBackground.svg");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.space-control {
+  height: 80px;
+}
+
+.portal {
+  color: white;
+}
