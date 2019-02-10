@@ -42,11 +42,11 @@ export default class Login extends Component {
     return (
       <Container>
         <Row>
-          <Col>
+          <Col md={{ span: 1 }}>
             <Image className="mt-3" src={PortalLogoWhite} />
           </Col>
           <Col>
-            <h3 className="portal">Portal</h3>
+            <h3 className="portal mt-4">Portal</h3>
           </Col>
         </Row>
         <div className="space-control" />

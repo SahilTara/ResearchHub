@@ -56,20 +56,44 @@ export default class Dashboard extends Component {
         <Row>
           <Col>
             <h1>Does sleep deprivation impact problematic eating?</h1>
+            <hr />
           </Col>
         </Row>
         <Row>
           <Col md={{ span: 1 }}>
             <Nav defaultActiveKey="/home" className="flex-column">
-              <Nav.Item className="mr-5" as="li">
-                <Image src={PortalLogoBlue} width="20" />
-                <Nav.Link href="/home">Active</Nav.Link>
+              <Nav.Item as="li">
+                <Row>
+                  <Col md={{ span: 1 }}>
+                    <Image src={PortalLogoBlue} width="20" />
+                  </Col>
+                  <Col>
+                    <Nav.Link href="/home">Active</Nav.Link>
+                  </Col>
+                </Row>
               </Nav.Item>
               <Nav.Item as="li">
+                <Nav.Item as="li">
+                  <Row>
+                    <Col md={{ span: 1 }}>
+                      <Image src={PortalLogoBlue} width="20" />
+                    </Col>
+                    <Col>
+                      <Nav.Link href="/home">Active</Nav.Link>
+                    </Col>
+                  </Row>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Row>
+                    <Col md={{ span: 1 }}>
+                      <Image src={PortalLogoBlue} width="20" />
+                    </Col>
+                    <Col>
+                      <Nav.Link href="/home">Active</Nav.Link>
+                    </Col>
+                  </Row>
+                </Nav.Item>
                 <Nav.Link eventKey="link-1">Link</Nav.Link>
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
