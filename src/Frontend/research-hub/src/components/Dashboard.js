@@ -16,8 +16,8 @@ import ShareLogo from "../images/outline-share-24px.svg";
 import LeftLogo from "../images/sharp-keyboard_arrow_left-24px.svg";
 import BaselineLogo from "../images/baseline-assessment-24px.svg";
 import ShareGroupLogo from "../images/sharp-group-24px.svg";
-import CircleDude from "../images/CircleDude.svg";
 import SearchLogo from "../images/baseline-search-24px.svg";
+
 
 import "./Dashboard.css";
 import {
@@ -44,16 +44,6 @@ export default class Dashboard extends Component {
     super(props);
     this.state = {};
   }
-
-  // fetch("https://research-hub-cs.azurewebsites.net/api/researchPosting/all", {
-  //   mode: "cors"
-  // })
-  //   .then(function(response) {
-  //     return response.json();
-  //   })
-  //   .then(function(myJson) {
-  //     console.log(JSON.stringify(myJson));
-  //   });
 
   componentDidMount() {
     console.log("Mounted!!!!!!!!!");
@@ -120,16 +110,16 @@ export default class Dashboard extends Component {
           <Col>
             <Row>
               <Col md={{ offset: 8 }}>
-                <Image src={SearchLogo} />
+                <Image src={SearchLogo} className="mr-3" />
                 <Image src={NotificationLogo} />
-                <Image src={CircleDude} />
               </Col>
             </Row>
             <Row>
               <Col>
                 <hr />
                 <h5 className="mt-5">
-                  Does sleep deprivation impact problematic eating?
+                  How does average walking steps impact blood sugar and
+                  inflamation?
                 </h5>
               </Col>
             </Row>
@@ -144,10 +134,9 @@ export default class Dashboard extends Component {
                             <Image src={CloudLogo} width="20" />
                           </Col>
                           <Col>
-                            <a href="/somefile.txt" download>
-                              download
+                            <a href="/data.csv" download>
+                              Download
                             </a>
-                            <Nav.Link href="/home">Download</Nav.Link>
                           </Col>
                         </Row>
                       </Nav.Item>
@@ -157,7 +146,9 @@ export default class Dashboard extends Component {
                             <Image src={ShareGroupLogo} width="20" />
                           </Col>
                           <Col>
-                            <Nav.Link href="/home">Share</Nav.Link>
+                            <a href="/" download>
+                              Share
+                            </a>
                           </Col>
                         </Row>
                       </Nav.Item>
@@ -167,7 +158,7 @@ export default class Dashboard extends Component {
                             <Image src={BaselineLogo} width="20" />
                           </Col>
                           <Col>
-                            <Nav.Link href="/home">Customize</Nav.Link>
+                            <a href="/">Customize</a>
                           </Col>
                         </Row>
                       </Nav.Item>
